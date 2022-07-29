@@ -16,6 +16,7 @@ export function Intern(){
         })
     return(
         <div className="App">
+            <h1 data-aos="fade-up" className="mb-3" >Internship 2k22</h1>
             <div className="row intern">
                 <div className="col-2 box--holder">
                     <div data-aos="fade-up" className="  card card__one"></div>
@@ -27,7 +28,7 @@ export function Intern(){
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
                     </div>
-                    <div data-aos="fade-up" className="card card"></div>
+                    <div data-aos="fade-up" className="card card__four"></div>
                     <div data-aos="fade-up" className="card card__two bg-warning">
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
@@ -38,33 +39,34 @@ export function Intern(){
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
                     </div>
-                    <div data-aos="fade-up" className="card card"></div>
+                    
                     <div data-aos="fade-up" className="card card__three bg-info">
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
                     </div>
+
                     <div data-aos="fade-up" className="card card__one"></div>
                     <div data-aos="fade-up" className="card card__three">
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
                     </div>
+                    <div data-aos="fade-up" className="card card__four"></div>
                 </div>
                 <div className="col-2 box--holder">
+                    <div data-aos="fade-up" className="card card__four"></div>
                     <div data-aos="fade-up" className="card card__two bg-warning">
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
                     </div>
                     <div data-aos="fade-up" className="card card__one"></div>
-                    <div data-aos="fade-up" className="card card__three bg-info">
-                        <div className="container card__img"></div>
-                        <div className="text-center">Firstname</div>
-                    </div>
-                    <div data-aos="fade-up" className="card card"></div>
                     <div data-aos="fade-up" className="card card__three bg-success">
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
                     </div>
-                    
+                    <div data-aos="fade-up" className="card card__three bg-info">
+                        <div className="container card__img"></div>
+                        <div className="text-center">Firstname</div>
+                    </div>
                 </div>
                 <div className="col-2 box--holder">
                     <div data-aos="fade-up" className="card card__three bg-info">
@@ -75,7 +77,7 @@ export function Intern(){
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
                     </div>
-                    <div data-aos="fade-up" className="card card"></div> 
+                    <div data-aos="fade-up" className="card card__four"></div> 
                     <div data-aos="fade-up" className="card card__two bg-primary">
                         <div className="container card__img"></div>
                         <div className="text-center">Firstname</div>
