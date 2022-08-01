@@ -11,12 +11,6 @@ $bgcolor:rgb(0, 119, 255);
 //App css
 .App{
   background-color: #001235;
-  min-height: 100vh;
-  width: 100%;
-  h1{
-    text-align: center;
-    color: #ffffff;
-  }
 }
 //Header css
 .header{
@@ -68,7 +62,32 @@ $bgcolor:rgb(0, 119, 255);
   }
 }
 //Footer css
-.footer {
+.footer{
+  &--header{
+    background-color: #150258;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+  }
+  &__golomtlogo{
+     margin-left: 4em;
+  }
+  &--email{
+    color: #ffffff;
+  }
+  ul{
+    display: flex;
+  }
+  li{
+    list-style-type:none;
+    color: #ffffff;
+    margin-left: 2em;
+    display: flex;
+    label,a {
+      margin-left: 1em;
+    }
+  }
   &--socials{
     display: flex;
     justify-content: center;
@@ -86,149 +105,42 @@ $bgcolor:rgb(0, 119, 255);
       margin: 2rem;
     }
   }
-
-  background-color: #150258;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("http://andreeabunget.co.uk/Img/footer.jpg");
+}
+//Face css
+.face{
+  height: 100vh;
+  background-image: url('./logo/students.jpg');
   background-size: cover;
-  letter-spacing: 2px;
-
-.first {
-  margin-top: 30%;
- // margin-bottom: 50px;
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
 }
-
-.second {
-  margin-top: 40px;
-  color: rgb(206,206,206);
-  text-align: center;
-}
-
-.second h4 {
-  font-size: 20px;
-  position: relative;
-  margin-bottom: 20px;
-  font-size: 1.6em;
-  color: #fff;
-  padding-bottom: 0.5em;
-}
-  .second h4::after {
-      content: '';
-      background: #66c83d;
-      width: 20%;
-      height: 2px;
-      position: absolute;
-      bottom: 0;
-      left: 40%;
-  }
-
-.second p,a {
-  color: rgb(206, 206, 206);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  transition: 0.2s;
-}
-
-  .second p:hover, a:hover{
-      color: #fff;
-      transition: 0.2s;
-      text-shadow: 1px 1px 20px rgba(0,0,0,1);
-      text-decoration: none
-  }
-
-.third {
-  margin-top: 40px;
-  color: rgb(206,206,206);
-  text-align: center;
-}
-  .third h4 {
-      font-size: 20px;
-      position: relative;
-      margin-bottom: 20px;
-      font-size: 1.6em;
-      color: #fff;
-      padding-bottom: 0.5em;
-  }
-      .third h4::after {
-          content: '';
-          background: #66c83d;
-          width: 20%;
-          height: 2px;
-          position: absolute;
-          bottom: 0;
-          left: 40%;
-      }
-  .third label {
-      color: rgb(206, 206, 206);
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      transition: 0.2s;
-  }
-  .third label:hover {
-      color: #fff;
-      transition: 0.2s;
-      text-shadow: 1px 1px 20px rgba(0,0,0,1);
-  }
-@media screen and (max-width:1000px) {
-  .first {
-      text-align: center;
-  }
-      .first h4::after {
-          left: 40%;
-      }
-}
-@media screen and (max-width:1000px) {
-  .third {
-      text-align: center;
-  }
-      .third h4::after {
-          left: 40% !important;
-      }
-}
-.line {
-  height:2px;
-  margin-top: 1rem;
-  background-color:rgb(206,206,206);
-  width:100%;
-}
-}
-
-
 //Home css
 .home{
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
+  
   // background-image: url("../src/logo/bg-image1.jpg");
   // background-size:100%;
   // background-repeat: no-repeat;
   &__intern2k22{
     color: #ffffff;
     margin: 3em 6em;
+    
     &--description{
       padding: 1em;
-      margin-top: 2em;
-      text-align: justify;
+      margin-top: 4em;
       box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
     }
     &--label{
       text-indent: 10%;
     }
     &--holder{
-      margin-top: 3em;
+      margin-top: 1em;
     }
     &--img{
       width: 500px;
-      padding: 1em;
-      box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
-      @media screen {
-        width: 40vw;
-      }
+      border-radius: 10px;
+      
     }
   }
 }
@@ -238,7 +150,7 @@ $bgcolor:rgb(0, 119, 255);
   flex-direction: column;
   align-items: center;
   color: rgb(255, 255, 255);
-  min-height: 100vh;
+  height: 100vh;
   // background-image: url("../src/logo/bg-image.jpg");
   // background-size:100%;
   // background-repeat: no-repeat;
@@ -275,28 +187,55 @@ $bgcolor:rgb(0, 119, 255);
     box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
     
   }
-  &--ul{
-    margin-bottom: 2em;
-    b{
-      color: rgb(13, 0, 255);
-    }
-    label{
-      text-align: justify;
-      text-indent: 20px;
-      margin-bottom: 1rem;
-      color: darkgray;
-    }
-    div{
-      box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
-    }
+  
+}
+//label css
+.label{
+  height: 100vh;
+  // background-image: url('./logo/bg-image2.jpg');
+  background-size: 100%;
+
+  &--content{
+      h2{
+        color: rgb(253, 253, 255);
+      }
+      label{
+        text-indent: 20px;
+        margin-bottom: 1rem;
+        padding: 1em;
+        color: rgb(239, 231, 231);
+        background-color: rgba(0, 0, 0,0.1);
+        border-radius: 10px;
+        width: 30vw;
+      }
+      & > div:nth-child(1){
+        width: 30vw;
+        position: absolute;
+        top:5%;
+        left: 5vw;
+      }
+      & > div:nth-child(2){
+        width: 30vw;
+        position: absolute;
+        top:30%;
+        left: 50vw;
+      }
+      & > div:last-child{
+        width: 30vw;
+        position: absolute;
+        top:60%;
+        left: 20vw;
+      }
+    
   }
 }
 //Intern css
 .intern{
   display: flex;
-  justify-content: center;
-  @media screen {
-    margin: auto 0;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    color: #ffffff;
   }
 }
 .box{
@@ -323,9 +262,6 @@ $bgcolor:rgb(0, 119, 255);
   &__three{
     height: 45vh;
     background-color: purple;
-  }
-  &__four{
-    height: 5px;
   }
   &__img{
     width: 10vw;
