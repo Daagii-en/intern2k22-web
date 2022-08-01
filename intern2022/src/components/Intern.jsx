@@ -8,7 +8,7 @@ export function Intern() {
     Aos.init({ duration: 1000 });
   });
   return (
-    <div className="intern">
+    <div className="intern" id="intern">
       <h1 className="">Internship</h1>
       <div className="row intern--content">
         <div className="col-2 box--holder">

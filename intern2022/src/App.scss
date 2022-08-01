@@ -2,7 +2,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
 $bg-primary: linear-gradient(to right, #003c7f, #2750f5);
-$bg-color: #0e1a2c;
+$bg-color: rgb(14, 26, 44);
 $bgcolor:rgb(0, 119, 255);
 
 *{
@@ -26,8 +26,12 @@ $bgcolor:rgb(0, 119, 255);
   position: fixed;
   align-items: center;
   z-index: 1000;
+  scroll-behavior: smooth;
+  font-size: 1.3rem;
+  font-family: 'Montserrat';
   &--logo{
     margin-left: 3em;
+    cursor: pointer;
     @media screen {
       width: 350px;
     }
@@ -64,11 +68,30 @@ $bgcolor:rgb(0, 119, 255);
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
+    position: relative;
+  }
+  li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 20%;
+    border-radius: 5px;
   }
   
-  li a:hover {
-    background-color: $bgcolor;
-    border:1px solid $bgcolor;
+  li a:hover:after {
+    width: 75%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  a.active:after {
+    width: 75%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
   }
 }
 //Footer css
@@ -126,18 +149,68 @@ $bgcolor:rgb(0, 119, 255);
   background-image: url('./logo/students.jpg');
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.8;
+  opacity: 0.9;
   label{
     font-size: 100px;
-    opacity: 1;
     //background-attachment: fixed;
-    text-shadow: 4px 5px 5px rgba(0,0,0,0.50);
+    //text-shadow: 6px 6px 5px rgba(0,0,0,0.50);
+    text-shadow: .1em .1em 0 rgba(14, 26, 44, 1);
     overflow-y: hidden;
     position: absolute;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     font-family: 'Montserrat';
     font-weight: 900;
-    z-index: -10;
+    animation-name: changeOpac;
+    //animation-name: flashText;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 3s;
+  }
+  .scroll-downs {
+    position: absolute;
+    bottom: 100px;
+    margin: auto;
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+  @keyframes changeOpac {
+    0% {color: rgba(255, 255, 255, 1);
+      text-shadow: .1em .1em 0 rgba(14, 26, 44, 1);}
+    50% {color: rgba(255, 255, 255, 0.3);
+      text-shadow: .1em .1em 0 rgba(14, 26, 44, 0.3);}
+    80% {color: rgba(255, 255, 255, 0.3);
+      text-shadow: .1em .1em 0 rgba(14, 26, 44, 0.3);}
+    100% {color: rgba(255, 255, 255, 1);
+      text-shadow: .1em .1em 0 rgba(14, 26, 44, 1);}
+  }
+  @keyframes flashText {
+    0% {text-shadow: .07em .07em 0 hsl(200 50% 30%);}
+    50% {text-shadow: .1em .1em 0 hsl(200 50% 30%);}
+    100% {text-shadow: .07em .07em 0 hsl(200 50% 30%);}
   }
   // width: 500px;
   // height: 500px;

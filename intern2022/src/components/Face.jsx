@@ -5,7 +5,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 export function Face() {
   useEffect(() => {
-    Aos.init({ duration: 500 });
+    Aos.init({
+      offset: 50, // offset (in px) from the original trigger point
+      duration: 500, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom",
+    });
     //scrollAnim();
   });
   const scrollAnim = (e) => {
@@ -26,6 +33,15 @@ export function Face() {
       <label data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">
         GOLOMT INTERNSHIP
       </label>
+      <div className="scroll-downs">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="1500"
+          className="mousey">
+          <div className="scroller"></div>
+        </div>
+      </div>
       {/* <label data-aos="fade-down" data-aos-delay="50" data-aos-duration="500">
         G
       </label>
