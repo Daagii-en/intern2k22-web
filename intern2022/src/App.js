@@ -1,5 +1,6 @@
 
 import './App.scss';
+import Header from './components/Header';
 import {Face} from './components/Face';
 import {Home} from './components/Home';
 import {Event} from './components/Event';
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Face/>
       <Home/>
       <Event/>

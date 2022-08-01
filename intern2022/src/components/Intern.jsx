@@ -4,15 +4,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export function Intern() {
-  const sr = ScrollReveal();
-  sr.reveal(".card", {
-    origin: "bottom",
-    distance: "100px",
-    duration: 3000,
-    scale: 0.5,
-  });
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   });
   return (
     <div className="intern">

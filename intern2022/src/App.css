@@ -1,21 +1,25 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 .App {
-  background-color: #001235;
   min-height: 100vh;
+  background-color: #0e1a2c;
+  overflow-x: hidden;
+  font-family: Calibri;
 }
 
 .header {
   width: 100%;
   height: 74px;
-  background-color: rgb(26, 4, 103);
   margin: 0%;
   display: flex;
+  position: fixed;
   align-items: center;
+  z-index: 1000;
 }
 .header--logo {
   margin-left: 3em;
@@ -26,9 +30,13 @@
   }
 }
 .header_li_logo {
-  margin-left: 3em;
-  width: 74px;
-  height: 74px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1000;
 }
 .header ul {
   list-style-type: none;
@@ -97,25 +105,65 @@
   margin: 2rem;
 }
 
+.face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./logo/students.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+}
+.face label {
+  font-size: 100px;
+  opacity: 1;
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+  overflow-y: hidden;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat";
+  font-weight: 900;
+  z-index: -10;
+}
+
+.face::before {
+  content: "";
+  background: linear-gradient(to top, #0e1a2c, transparent);
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+}
+
 .home {
   display: flex;
+  z-index: 10000;
   flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
 }
 .home__intern2k22 {
   color: #ffffff;
   margin: 3em 6em;
 }
+.home__intern2k22--title {
+  font-weight: 900;
+  text-align: center;
+}
 .home__intern2k22--description {
   padding: 1em;
-  margin-top: 4em;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  margin-top: 6em;
+  background-color: #eee;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 10px 8px 15px -60px rgba(255, 255, 255, 0.3);
 }
 .home__intern2k22--label {
   text-indent: 10%;
+  color: black;
 }
 .home__intern2k22--holder {
-  margin-top: 1em;
+  margin-top: 3em;
 }
 .home__intern2k22--img {
   width: 500px;
@@ -127,18 +175,12 @@
   flex-direction: column;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color: #003c7f;
-  height: 100vh;
-}
-.event__intern2k22--title {
-  text-align: center;
 }
 .event__intern2k22--label {
-  margin: 4em 5em;
+  margin-top: 0;
+  margin-right: 5em;
+  width: 500px;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .event__intern2k22--label--content {
   text-align: justify;
@@ -146,33 +188,36 @@
 .event__intern2k22--label--content label {
   text-indent: 10%;
   padding: 1rem;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 10px 8px 15px -10px rgba(255, 255, 255, 0.5);
 }
 .event--content {
-  margin: 4em 2em;
-  margin-right: 5em;
+  margin-top: 2em;
+  margin-left: 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .event--logo {
-  width: 100%;
-  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 10px 12px 18px -6px rgba(0, 187, 255, 0.3);
 }
 
 .label {
   height: 100vh;
+  background-size: 100%;
 }
 .label--content h2 {
-  color: rgb(13, 0, 255);
+  color: rgb(253, 253, 255);
 }
 .label--content label {
   text-indent: 20px;
   margin-bottom: 1rem;
   padding: 1em;
-  color: rgb(39, 36, 36);
-  background-color: rgb(231, 228, 228);
+  color: rgb(239, 231, 231);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 30vw;
 }
@@ -185,20 +230,24 @@
 .label--content > div:nth-child(2) {
   width: 30vw;
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 50vw;
 }
 .label--content > div:last-child {
   width: 30vw;
   position: absolute;
-  top: 55%;
-  left: 15vw;
+  top: 60%;
+  left: 20vw;
 }
 
 .intern {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  min-height: 100%;
+}
+.intern h1 {
+  color: #ffffff;
 }
 
 .box--holder {

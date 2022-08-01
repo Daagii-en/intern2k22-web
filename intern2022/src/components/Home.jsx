@@ -1,29 +1,26 @@
 import React, { useEffect } from "react";
 import Header from "./Header";
 import digitallogo from "../logo/digital-logo.png";
-import ScrollReveal from "scrollreveal";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-const slidUp = {
-  distance: "50px",
-
-  origin: "bottom",
-  duration: 2000,
-  interval: 1000,
-
-  reset: true,
-};
 export function Home() {
-  ScrollReveal().reveal(".home", slidUp);
-  ScrollReveal().reveal(".home--title", slidUp);
-  ScrollReveal().reveal(".home__intern2k22--description", slidUp);
-  ScrollReveal().reveal(".home__intern2k22--holder", slidUp);
-
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+    });
+  });
   return (
     <div className="home">
       <div className="home__intern2k22 row">
-        <h1 className="event__intern2k22--title">Golomt Internship Хөтөлбөр</h1>
-        <div className="container col home__intern2k22--description">
-          <h4 className="mb-5">
+        <h1 data-aos="fade-up" className="home__intern2k22--title">
+          GOLOMT INTERNSHIP ХӨТӨЛБӨР
+        </h1>
+        <div
+          data-aos="fade-up"
+          className="container col home__intern2k22--description"
+        >
+          <h4 className="mb-3">
             <b>БИДНИЙ ТУХАЙ</b>
           </h4>
           <label className="home__intern2k22--label">
@@ -35,7 +32,10 @@ export function Home() {
             билээ.
           </label>
         </div>
-        <div className="container col home__intern2k22--holder ms-">
+        <div
+          data-aos="fade-up"
+          className="container col home__intern2k22--holder "
+        >
           <img className="home__intern2k22--img" src={digitallogo} />
         </div>
       </div>

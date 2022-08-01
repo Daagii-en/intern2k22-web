@@ -1,7 +1,8 @@
 
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
 $bg-primary: linear-gradient(to right, #003c7f, #2750f5);
-$bg-color: rgb(26, 4, 103);
+$bg-color: #0e1a2c;
 $bgcolor:rgb(0, 119, 255);
 
 *{
@@ -10,16 +11,21 @@ $bgcolor:rgb(0, 119, 255);
 }
 //App css
 .App{
-  background-color: #001235;
+  min-height: 100vh;
+  background-color: $bg-color;
+  overflow-x: hidden;
+  font-family: Calibri;
 }
 //Header css
 .header{
   width: 100%;
   height: 74px;
-  background-color: $bg-color;
+ // background-color: $bg-color;
   margin: 0%;
   display: flex;
+  position: fixed;
   align-items: center;
+  z-index: 1000;
   &--logo{
     margin-left: 3em;
     @media screen {
@@ -28,9 +34,13 @@ $bgcolor:rgb(0, 119, 255);
   }
   &_li{
     &_logo{
-      margin-left: 3em;
-    width: 74px;
-    height: 74px;
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1000;
     }
   }
   ul {
@@ -108,39 +118,72 @@ $bgcolor:rgb(0, 119, 255);
 }
 //Face css
 .face{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   height: 100vh;
   background-image: url('./logo/students.jpg');
   background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+  label{
+    font-size: 100px;
+    opacity: 1;
+    //background-attachment: fixed;
+    text-shadow: 4px 5px 5px rgba(0,0,0,0.50);
+    overflow-y: hidden;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Montserrat';
+    font-weight: 900;
+    z-index: -10;
+  }
+  // width: 500px;
+  // height: 500px;
+  //z-index: 100;
+}
+.face::before {
+  content: '';
+  background: linear-gradient(to top, $bg-color, transparent);
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  position: absolute;
 }
 //Home css
 .home{
   display: flex;
+  z-index: 10000;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  
-  // background-image: url("../src/logo/bg-image1.jpg");
-  // background-size:100%;
-  // background-repeat: no-repeat;
+  //height: 100vh;
   &__intern2k22{
     color: #ffffff;
     margin: 3em 6em;
-    
+    &--title{
+      font-weight: 900;
+      text-align: center;
+    }
     &--description{
       padding: 1em;
-      margin-top: 4em;
-      box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+      margin-top: 6em;
+      background-color: #eee;
+      color: #333;
+      border-radius: 10px;
+      //box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.5);
+      box-shadow: 10px 8px 15px -60px rgba(255, 255, 255,0.3);
     }
     &--label{
       text-indent: 10%;
+      color: black;
     }
     &--holder{
-      margin-top: 1em;
+      margin-top: 3em;
     }
     &--img{
       width: 500px;
       border-radius: 10px;
-      
     }
   }
 }
@@ -150,44 +193,39 @@ $bgcolor:rgb(0, 119, 255);
   flex-direction: column;
   align-items: center;
   color: rgb(255, 255, 255);
-  height: 100vh;
   // background-image: url("../src/logo/bg-image.jpg");
   // background-size:100%;
   // background-repeat: no-repeat;
   &__intern2k22{
-    &--title{
-      text-align: center;
-    }
     &--label{
-      margin: 4em 5em;
+      margin-top: 0;
+      margin-right: 5em;
+      width: 500px;
       color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      &--content{
+      &--content{ 
         text-align: justify;
         label{
           text-indent: 10%;
           padding: 1rem;
-          box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+          border-radius: 10px;
+          box-shadow: 10px 8px 15px -10px rgb(255, 255, 255,0.5);
         }
       }
     }
   }
   &--content{
-    margin: 4em 2em;
-    margin-right: 5em;
+    margin-top: 2em;
+    margin-left: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   &--logo{
-    width: 100%;
-    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
-    
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 10px 12px 18px -6px rgba(0, 187, 255, 0.3);
   }
-  
 }
 //label css
 .label{
@@ -217,7 +255,7 @@ $bgcolor:rgb(0, 119, 255);
       & > div:nth-child(2){
         width: 30vw;
         position: absolute;
-        top:30%;
+        top:35%;
         left: 50vw;
       }
       & > div:last-child{
@@ -234,6 +272,7 @@ $bgcolor:rgb(0, 119, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100%;
   h1{
     color: #ffffff;
   }
