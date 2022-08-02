@@ -26,7 +26,6 @@ export function Event() {
         <div data-aos="fade-up" className="col event__intern2k22--label">
           <div className="event__intern2k22--label--content">
             <label>
-              {" "}
               Internship хөтөлбөр нь тухайн оюутанд суралцаж байх хугацаанд нь
               ажлын байранд тодорхой хугацаанд цалинтай дадлагашуулах зорилготой
               юм. Голомт банкны мэдээллийн технологийн хэсгийн хамт олон

@@ -18,7 +18,8 @@ export function Home() {
         </h1>
         <div
           data-aos="fade-up"
-          className="container col home__intern2k22--description">
+          className="container col home__intern2k22--description"
+        >
           <h4 className="mb-3">
             <b>БИДНИЙ ТУХАЙ</b>
           </h4>
@@ -33,10 +34,12 @@ export function Home() {
         </div>
         <div
           data-aos="fade-up"
-          className="container col home__intern2k22--holder ">
+          className="container col home__intern2k22--holder "
+        >
           <img className="home__intern2k22--img" src={digitallogo} />
         </div>
       </div>
+      <div className="arrow"></div>
     </div>
   );
 }
