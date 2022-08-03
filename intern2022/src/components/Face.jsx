@@ -30,7 +30,12 @@ export function Face() {
   };
   return (
     <div className="face">
-      <label data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">
+      <label
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="1000"
+        className="mt-5"
+      >
         GOLOMT INTERNSHIP
       </label>
       <div className="scroll-downs">
@@ -38,7 +43,8 @@ export function Face() {
           data-aos="fade-right"
           data-aos-duration="500"
           data-aos-delay="1500"
-          className="mousey">
+          className="mousey"
+        >
           <div className="scroller"></div>
         </div>
       </div>

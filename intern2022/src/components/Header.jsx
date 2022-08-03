@@ -115,7 +115,12 @@ export default class Header extends Component {
         </div>
         <div>
           <div className="header_li">
-            <img href="#golomt" src={logo} className="header_li_logo" />
+            <img
+              href="#golomt"
+              src={logo}
+              className="header_li_logo"
+              onClick={this.scrollToHome}
+            />
           </div>
         </div>
       </div>

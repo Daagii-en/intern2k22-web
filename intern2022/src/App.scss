@@ -156,7 +156,7 @@ $bgcolor:rgb(0, 119, 255);
 .face{
   display: flex;
   justify-content: center;
-  align-items: center;
+  //align-items: center;
   height: 100vh;
   background-image: url('./logo/students.jpg');
   background-size: cover;
@@ -332,6 +332,27 @@ $bgcolor:rgb(0, 119, 255);
   }
 }
 //label css
+.icons{
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  &-ft{
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 5px;
+    background-color: rgba(0, 35, 162, 0.4);
+  }
+  &-ft:hover{
+    background-color: #2750f5;
+    border-color:#2750f5 ;
+  }
+}
+.icons:hover{
+  background-color: #2750f5;
+  border-color:#2750f5 ;
+}
 .label{
   height: 100vh;
   // background-image: url('./logo/bg-image2.jpg');
@@ -340,6 +361,7 @@ $bgcolor:rgb(0, 119, 255);
   &--content{
       h2{
         color: rgb(253, 253, 255);
+        font-size: calc(1rem + 0.9vw);
       }
       label{
         text-indent: 20px;
@@ -371,6 +393,7 @@ $bgcolor:rgb(0, 119, 255);
     
   }
 }
+
 //Intern css
 .intern{
   display: flex;
