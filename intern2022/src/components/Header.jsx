@@ -17,10 +17,10 @@ export default class Header extends Component {
     console.log(scroll);
     if (scroll > prevY && scroll > 10) {
       nav.classList.add("removeNav");
-      console.log("added class");
+      //console.log("added class");
     } else if (scroll <= prevY) {
       nav.classList.remove("removeNav");
-      console.log("deleted class");
+      //console.log("deleted class");
     }
     this.prevY = scroll;
   };
@@ -44,15 +44,15 @@ export default class Header extends Component {
     //let intern = document.querySelector("#internAnchor");
     //let contact = document.querySelector("#contactAnchor");
     // let scroll = window.scrollY;
-    if (homeY > 0) {
+    if (homeY > 200) {
       homeA.classList.remove("active");
       internA.classList.remove("active");
       contactA.classList.remove("active");
-    } else if (homeY <= 0 && internY > 0) {
+    } else if (homeY <= 200 && internY > 200) {
       internA.classList.remove("active");
       contactA.classList.remove("active");
       homeA.classList.add("active");
-    } else if (internY <= 0 && contactY > 300) {
+    } else if (internY <= 200 && contactY > 300) {
       homeA.classList.remove("active");
       contactA.classList.remove("active");
       internA.classList.add("active");

@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
-import digitallogo from "../logo/digital-logo.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 export function Face() {
