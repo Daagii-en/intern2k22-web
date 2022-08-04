@@ -9,7 +9,7 @@ export function Intern() {
   });
   return (
     <div className="intern" id="intern">
-      <h1 className="">Our team</h1>
+      <h1>Манай баг</h1>
       <div className="row intern--content">
         <div className="col-2 box--holder">
           <div data-aos="fade-up" className="  card card__one"></div>

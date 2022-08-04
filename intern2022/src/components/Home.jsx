@@ -20,9 +20,9 @@ export function Home() {
           data-aos="fade-up"
           className="container col home__intern2k22--description"
         >
-          <h4 className="mb-3">
+          <h2 className="mb-3">
             <b>БИДНИЙ ТУХАЙ</b>
-          </h4>
+          </h2>
           <label className="home__intern2k22--label">
             Дижитал мэргэжилтэн хөтөлбөр нь Голомт банкны мэдээллийн технологийн
             хэсгээс санаачлан зохион байгуулж буй Information Technology буюу

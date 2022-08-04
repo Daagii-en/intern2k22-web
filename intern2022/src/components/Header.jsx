@@ -52,11 +52,11 @@ export default class Header extends Component {
       internA.classList.remove("active");
       contactA.classList.remove("active");
       homeA.classList.add("active");
-    } else if (internY <= 200 && contactY > 300) {
+    } else if (internY <= 200 && contactY > 400) {
       homeA.classList.remove("active");
       contactA.classList.remove("active");
       internA.classList.add("active");
-    } else if (contactY <= 300) {
+    } else if (contactY <= 400) {
       homeA.classList.remove("active");
       internA.classList.remove("active");
       contactA.classList.add("active");

@@ -1,6 +1,6 @@
 
 @import "bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Nunito:wght@400;500;600;700;800;900&display=swap');
 $bg-primary: linear-gradient(to right, #003c7f, #2750f5);
 $bg-color: rgb(14, 26, 44);
 $bgcolor:rgb(0, 119, 255);
@@ -30,7 +30,7 @@ video{
   background-color: $bg-color;
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: Calibri;
+  font-family: 'Nunito';
 }
 //Header css
 .removeNav{
@@ -279,10 +279,15 @@ video{
       //box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.5);
       
       //transform: translateX(50px) !important;
+      h2 {
+        font-weight: 800;
+      }
     }
     &--label{
       text-indent: 10%;
+      font-size: medium;
       color: white; //rgb(68, 57, 221);
+      font-weight: 700;
     }
     &--holder{
       margin-top: 3em;
@@ -317,29 +322,34 @@ video{
   // background-size:100%;
   // background-repeat: no-repeat;
   &__intern2k22{
-    margin: 3em 6em;
+    margin: 0em 6em;
     &--label{
       padding: 0%;
       width: inherit;
       color: #ffffff;
       &--content{ 
-        text-align: justify;
+        //text-align: justify;
+        
         label{
+          margin-bottom: 50px;
           text-indent: 10%;
           padding: 1rem;
           border-radius: 10px;
+          font-size: medium;
+          font-weight: 700;
           //box-shadow: 10px 8px 15px -10px rgb(255, 255, 255,0.5);
         }
       }
     }
   }
   &--content{
-    margin-top: 2em;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0%;
+    
   }
   &--logo{
     border-radius: 10px;
@@ -373,11 +383,13 @@ video{
   height: 100vh;
   // background-image: url('./logo/bg-image2.jpg');
   background-size: 100%;
-
+  font-family: 'Nunito';
+ margin-bottom: 30px;
   &--content{
       h2{
         color: rgb(253, 253, 255);
         font-size: calc(1rem + 0.9vw);
+        font-weight: 900;
       }
       label{
         text-indent: 20px;
@@ -387,6 +399,7 @@ video{
         background-color: rgba(0, 0, 0,0.1);
         border-radius: 10px;
         width: 30vw;
+        font-weight: 800;
       }
       & > div:nth-child(1){
         width: 30vw;
@@ -398,10 +411,10 @@ video{
         width: 30vw;
         position: absolute;
         top:35%;
-        left: 50vw;
+        left: 55vw;
       }
       & > div:last-child{
-        width: 30vw;
+        width: 40vw;
         position: absolute;
         top:60%;
         left: 20vw;
@@ -413,67 +426,171 @@ video{
 .social{
   color:#fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 50vh;
-  
-  &__title{
-    text-align: center;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  h1 {
+    font-weight: 900;
+    margin-bottom: 0.5em;
   }
   &__content{
     margin-bottom: 3em;
-    div{
+    .menu {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0;
     }
-    a{
-      border-radius: 0%;
-      background-color: rgba(3, 7, 56, 0.747);
-      padding: 20px;
-      cursor: pointer;
+    .menu div {
+      width: fit-content;
     }
-    a:hover{
-      background: rgb(3, 12, 136);
+    .menu a {
+      position: relative;
+      display: block;
+      overflow: hidden;
     }
-    
+   .menu a span {
+    transition: transform 0.2s ease-out;
+   }
+   .menu a span:first-child {
+    display: block;
+    padding: 10px;
+   }
+   .menu a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+   }
+   .menu a:hover span:first-child {
+    transform: translateY(-100%);
+   }
+   .menu a:hover span:last-child,
+   .menu[data-animation] a:hover span:last-child {
+    transform: none;
+   }
+    .facebook{
+      //color: #1778f2;
+    color: white;
+    }
+    .youtube{
+      //color: #ff0000;
+      color: white;
+    }
+    .instagram{
+      // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+      // background-size: 100%;
+      // background-repeat: repeat;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      // -moz-background-clip: text;
+      // -moz-text-fill-color: transparent;
+      color: white;
+    //   background: #f09433; 
+    // background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    // background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    // background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+      }
     div{
       width: 80px;
       height: 80px;
     }
   }
 }
+
 //partners
 .partners{
   color:#fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 50vh;
-  &__title{
-    text-align: center;
+  text-align: center;
+  margin-bottom: 30px;
+  h1{
+    font-weight: 900;
   }
   &__content{
     margin-bottom: 3em;
-    div{
+    .menu {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0;
     }
-    a{
-      border-radius: 50%;
-      background-color: rgba(3, 7, 56, 0.747);
-      padding: 20px;
+    .menu div {
+      width: fit-content;
+    }
+    .menu a {
+      position: relative;
+      display: block;
+      overflow: hidden;
       cursor: pointer;
-    }
-    a:hover{
-      background: rgb(3, 12, 136);
-    }
-    .shutis{
-      width: 80px;
-      &-logo{
-        width: 60px;
+      img {
+        width: 80px;
+      }
+      .shutis-logo{
+        width: 50px;
       }
     }
-    img{
+   .menu a span {
+    transition: transform 0.2s ease-out;
+   }
+   .menu a span:first-child {
+    display: block;
+    padding: 10px;
+   }
+   .menu a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+   }
+   .menu a:hover span:first-child {
+    transform: translateY(-100%);
+   }
+   .menu a:hover span:last-child,
+   .menu[data-animation] a:hover span:last-child {
+    transform: none;
+   }
+    .facebook{
+      //color: #1778f2;
+    color: white;
+    }
+    .youtube{
+      //color: #ff0000;
+      color: white;
+    }
+    .instagram{
+      // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+      // background-size: 100%;
+      // background-repeat: repeat;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      // -moz-background-clip: text;
+      // -moz-text-fill-color: transparent;
+      color: white;
+    //   background: #f09433; 
+    // background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    // background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    // background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+      }
+    div{
       width: 80px;
       height: 80px;
     }
@@ -491,6 +608,7 @@ video{
     color: #ffffff;
     position: absolute;
     top: 0;
+    font-weight: 900;
   }
   &--content{
     margin-top: 2em;
