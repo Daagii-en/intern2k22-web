@@ -10,6 +10,7 @@ import {Label} from './components/Label'
 import { Partners } from './components/Partners';
 import { Social } from './components/Social';
 import vd from './logo/Pexels-Videos.mp4';
+import { Gallery } from './components/Gallery';
 function App() {
   return (
     
@@ -25,6 +26,7 @@ function App() {
       <Social/>
       <Partners/>
       <Intern/>
+      <Gallery />
       <Footer/>
     </div>
     

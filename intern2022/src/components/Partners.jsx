@@ -23,6 +23,10 @@ export function Partners() {
         className="row partners__title"
       >
         <h1>Хамтрагч байгууллага</h1>
+        <p>
+          Дижитал мэргэжилтэн хөтөлбөрийн үйл ажиллагааг хамтран зохион
+          байгуулагч их сургууль, оюутны клуб, академ болон байгууллагууд.
+        </p>
       </div>
       <div className="row partners__content">
         <div className="menu">

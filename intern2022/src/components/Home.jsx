@@ -18,6 +18,7 @@ export function Home() {
         </h1>
         <div
           data-aos="fade-up"
+          data-aos-delay="200"
           className="container col home__intern2k22--description"
         >
           <h2 className="mb-3">

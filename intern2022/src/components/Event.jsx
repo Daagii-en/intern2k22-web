@@ -1,17 +1,9 @@
 import React, { useEffect } from "react";
 import logo from "../logo/intern-logo.jpg";
-import ScrollReveal from "scrollreveal";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 export function Event() {
-  const sr = ScrollReveal();
-  sr.reveal(".event__intern2k22--title", {
-    origin: "bottom",
-    distance: "50px",
-    duration: 3000,
-    scale: 0.5,
-  });
   useEffect(() => {
     Aos.init({
       duration: 2000,

@@ -6,6 +6,9 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="footer" id="contact">
+        <div>
+          <label>O.Tsenguun</label> <label>U.Davaajargal</label>
+        </div>
         <div className="footer--header">
           <div className="footer__golomtlogo">
             <svg
@@ -86,7 +89,7 @@ export default class Footer extends Component {
             </ul>
           </div>
         </div>
-        <div className="footer--socials social-circle">
+        <div className="footer--socials">
           <a
             target="_blank"
             title="facebook"
