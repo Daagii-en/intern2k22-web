@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
 import digitallogo from "../logo/digital-logo.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,8 +18,7 @@ export function Home() {
         <div
           data-aos="fade-up"
           data-aos-delay="200"
-          className="container col home__intern2k22--description"
-        >
+          className="container col home__intern2k22--description">
           <h2 className="mb-3">
             <b>БИДНИЙ ТУХАЙ</b>
           </h2>
@@ -35,9 +33,8 @@ export function Home() {
         </div>
         <div
           data-aos="fade-up"
-          className="container col home__intern2k22--holder "
-        >
-          <img className="home__intern2k22--img" src={digitallogo} />
+          className="container col home__intern2k22--holder ">
+          <img className="home__intern2k22--img" src={digitallogo} alt="" />
         </div>
       </div>
       <div className="arrow"></div>
