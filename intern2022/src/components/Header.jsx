@@ -13,7 +13,7 @@ export default class Header extends Component {
   }
   handleButtonHeart = (e) => {
     this.setState({ like: this.state.like + 1, clicked: !this.state.clicked });
-    if (e.target.tagName == "path") {
+    if (e.target.tagName === "path") {
       e.target = e.target.parentNode;
     }
     console.log(e.target.classList.contains("bi-heart1"));
@@ -35,7 +35,7 @@ export default class Header extends Component {
   navScrollBehavior = (prevY) => {
     let nav = document.querySelector("#nav");
     let scroll = window.scrollY;
-    console.log(scroll);
+
     if (scroll > prevY && scroll > 10) {
       nav.classList.add("removeNav");
       //console.log("added class");
@@ -123,8 +123,7 @@ export default class Header extends Component {
                     fill="currentColor"
                     className="bi bi-heart"
                     viewBox="0 0 16 16"
-                    onClick={this.handleButtonHeart}
-                  >
+                    onClick={this.handleButtonHeart}>
                     <path
                       fillRule="evenodd"
                       d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
@@ -139,8 +138,7 @@ export default class Header extends Component {
                     className="bi bi-heart bi-heart1"
                     viewBox="0 0 16 16"
                     type="button"
-                    onClick={this.handleButtonHeart}
-                  >
+                    onClick={this.handleButtonHeart}>
                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                   </svg>
                 )}
