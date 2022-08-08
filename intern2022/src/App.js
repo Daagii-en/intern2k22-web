@@ -10,12 +10,14 @@ import { Partners } from "./components/Partners";
 import { Social } from "./components/Social";
 import vd from "./logo/Pexels-Videos.mp4";
 import { Gallery } from "./components/Gallery";
+import { Gallery2 } from "./components/Gallery2";
+
 function App() {
   return (
     <div className="App">
-      {/* <video autoPlay loop muted>
+      <video autoPlay loop muted>
         <source src={vd} />
-      </video> */}
+      </video>
       <Header />
       <Face />
       <Home />
@@ -24,7 +26,7 @@ function App() {
       <Social />
       <Partners />
       <Intern />
-      <Gallery />
+      <Gallery2 />
       <Footer />
     </div>
   );
