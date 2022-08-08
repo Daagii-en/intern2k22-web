@@ -793,3 +793,135 @@ video {
     }
   }
 }
+
+.gallery2 {
+  z-index: 1000;
+  display: block;
+  .slide-container {
+    display: flex;
+    flex-direction: column;
+      width: 70%;
+      margin: auto;
+    }
+  
+    h3 {
+      text-align: center;
+    }
+  
+    .each-slide>div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      height: 300px;
+    }
+  
+    .each-slide span {
+      padding: 20px;
+      font-size: 20px;
+      background: #efefef;
+      text-align: center;
+    }
+  
+    .each-fade {
+      display: flex;
+    }
+  
+    .each-fade .image-container {
+      width: 75%;
+      overflow: hidden;
+    }
+  
+    .each-fade .image-container img {
+      width: 100%;
+    }
+  
+    .each-fade h2 {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background: #adceed;
+    }
+  
+    .indicator {
+      width: 30px;
+      color: blue;
+      text-align: center;
+      cursor: pointer;
+      border: 1px blue solid;
+    }
+  
+    .indicator.active {
+      background: #000;
+      color: #fff;
+    }
+}
+
+.gallery3 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  .gallery {
+      display: flex;
+      padding: 2px;
+      transition: .3s;
+  
+      &:hover &__image {
+        filter: grayscale(1);
+      }
+  
+      &__column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+      }
+  
+      &__link {
+        margin: 2px;
+        overflow: hidden;
+  
+        &:hover {
+          .gallery__image {
+            filter: grayscale(0);
+          }
+  
+          .gallery__caption {
+            opacity: 1;
+          }
+        }
+      }
+  
+      &__thumb {
+        position: relative;
+      }
+  
+      &__image {
+        display: block;
+        width: 100%;
+        transition: .3s;
+  
+        // &:hover {
+        //   transform: scale(1.1);
+        // }
+      }
+  
+      &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: white;
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: .3s;
+      }
+    }
+}
