@@ -15,7 +15,7 @@ export function Label() {
   });
   return (
     <div data-aos="fade-up" className="label">
-      <div className="row label--content ms-5 container ">
+      <div className="row label--content  container ">
         <div data-aos="fade-up" className=" mt-3">
           <h2>
             <span>

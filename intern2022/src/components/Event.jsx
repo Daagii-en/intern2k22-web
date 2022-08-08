@@ -10,9 +10,13 @@ export function Event() {
     });
   });
   return (
-    <div data-aos="fade-up" className="event">
+    <div className="event">
       <div className="row event__intern2k22">
-        <div className="col container event--content">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="col container  event--content"
+        >
           <img className="event--logo" src={logo} />
         </div>
         <div data-aos="fade-up" className="col event__intern2k22--label">
