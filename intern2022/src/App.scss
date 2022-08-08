@@ -727,10 +727,12 @@ video {
 @media screen and (max-width:1200px) {
   .social{
     width: 80%;
-    display: inline;
+    //display: inline;
+    margin: 0% auto;
   }
   .partners{
-   // width: 80%;
+    width: 80%;
+    margin: 0% auto;
   }
 }
 //partners
