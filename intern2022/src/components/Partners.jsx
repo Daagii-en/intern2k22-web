@@ -40,7 +40,12 @@ export function Partners() {
               </span>
             </a>
           </div>
-          <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="300"
+            className="shutis1"
+          >
             <a href="https://www.must.edu.mn/mn/" target="_blank">
               <span>
                 <div className="shutis">
