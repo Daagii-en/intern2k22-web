@@ -167,12 +167,14 @@ video {
       width: 80%;
       display: flex;
       justify-content: space-around;
+      opacity: 1 !important;
       div{
         color: white;
         img{
           width: 100px;
           height: 100px;
           border-radius: 50%;
+          
         }
         p{
           margin:1em auto;
@@ -227,6 +229,15 @@ video {
   }
 }
 @media screen and (max-width:1200px) {
+  .header {
+    .header--logo {
+      margin-left: 0;
+      width: 80%;
+      img {
+        width: 80%;
+      }
+    }
+  }
   .footer{
     &__golomtlogo {
       margin: auto;
@@ -257,6 +268,14 @@ video {
   }
 }
 @media screen and (max-width:700px) {
+  .header {
+    .header--logo {
+      width: 100%;
+    }
+    .col.menu {
+      display: none;
+    }
+  }
   .footer{
     &--header{
       display: flex;
@@ -743,7 +762,7 @@ video {
     .menu a span {
       transition: transform 0.2s ease-out;
     }
-    .menu a span:first-child {
+    .menu a span {
       display: block;
       padding: 10px;
     }
@@ -1032,6 +1051,9 @@ video {
 .card {
   margin: 1em;
   box-shadow: 5px 12px 18px -6px rgba(0, 0, 0, 0.689);
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
   &__one {
     height: 100px;
     background-color: rgb(224, 41, 99);
@@ -1046,10 +1068,17 @@ video {
   }
   &__img {
     width: 70%;
-    height: 70%;
+    height: 60%;
     margin-top: 1em;
     background-color: rgba(53, 50, 50, 0.5);
     border-radius: 5px;
+    padding: 0%;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      
+    }
   }
 }
 

@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <div className="footer" id="contact">
         <div className="developer">
-          <h1>Хөгжүүлэгч</h1>
+          <h1>Хөгжүүлсэн</h1>
           <div className="developer__dev">
             <div className="">
               <img src={devImg2} alt="img" />
