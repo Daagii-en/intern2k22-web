@@ -1,12 +1,22 @@
 import React, { Component } from "react";
-
+import devImg1 from "../logo/devImg1.jpg";
+import devImg2 from "../logo/devImg2.jpg";
 export default class Footer extends Component {
   render() {
     return (
       <div className="footer" id="contact">
-        <div>
-          <label>O.Tsenguun</label>
-          <label>U.Davaajargal</label>
+        <div className="developer">
+          <h1>Хөгжүүлэгч</h1>
+          <div className="developer__dev">
+            <div className="">
+              <img src={devImg2} alt="img" />
+              <p>O.Tsenguun</p>
+            </div>
+            <div>
+              <img src={devImg1} alt="img" />
+              <p>U.Davaajargal</p>
+            </div>
+          </div>
         </div>
         <div className="footer--header">
           <div className="footer__golomtlogo">
