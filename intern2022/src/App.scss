@@ -1065,6 +1065,10 @@ video {
     height: 300px;
     background-color: purple;
   }
+  &__four{
+    height: 10px;
+    background-color: white;
+  }
   &__img {
     width: 70%;
     height: 60%;
@@ -1085,7 +1089,7 @@ video {
 }
 
 .gallery {
-  z-index: 1000;
+  //z-index: 1000;
   .container {
     max-width: 800px;
     margin: 0 auto;
@@ -1174,7 +1178,7 @@ video {
 }
 
 .gallery2 {
-  z-index: 1000;
+  //z-index: 1000;
   display: block;
   .slide-container {
     display: flex;
@@ -1259,7 +1263,6 @@ video {
         flex-direction: column;
         width: 25%;
       }
-  
       &__link {
         margin: 2px;
         overflow: hidden;
@@ -1268,7 +1271,6 @@ video {
           .gallery__image {
             filter: grayscale(0);
           }
-  
           .gallery__caption {
             opacity: 1;
           }

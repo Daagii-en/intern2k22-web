@@ -14,7 +14,7 @@ export function Social() {
     //scrollAnim();
   });
   return (
-    <div className="social row">
+    <div className="social row" id="social">
       <div
         data-aos="fade-up"
         data-aos-duration="500"

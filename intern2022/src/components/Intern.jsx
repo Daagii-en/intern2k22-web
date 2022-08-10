@@ -9,7 +9,7 @@ export function Intern() {
     Aos.init({ duration: 1000 });
   });
   return (
-    <div className="intern" id="intern">
+    <div data-aos="fade-up" className="intern" id="intern">
       <h1>Манай баг</h1>
       <div className="row intern--content">
         <div className="col-2 box--holder">
@@ -19,8 +19,8 @@ export function Intern() {
               <img src={davaajargal} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>U.Davaajargal</p>
-              <p>NUM</p>
+              <p>Ө.Даваажаргал</p>
+              <p>МУИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__three">
@@ -28,8 +28,8 @@ export function Intern() {
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Г.Батжаргал</p>
+              <p>МУИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__four"></div>
@@ -38,10 +38,20 @@ export function Intern() {
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Э.Эрхэмбаяр</p>
+              <p>ШУТИС</p>
             </div>
           </div>
+          <div data-aos="fade-up" className="card card__three bg-info">
+            <div className="container card__img">
+              <img src={profile} alt="zurag" />
+            </div>
+            <div className="text-center">
+              <p>Б.Тэмүүлэн</p>
+              <p>ШУТИС</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" className="card card__four"></div>
         </div>
         <div className="col-2 box--holder">
           <div data-aos="fade-up" className="card card__two bg-success ">
@@ -49,8 +59,8 @@ export function Intern() {
               <img src={tsenguun} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>O.Tsenguun</p>
-              <p>NUM</p>
+              <p>О.Цэнгүүн</p>
+              <p>МУИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__four"></div>
@@ -59,18 +69,28 @@ export function Intern() {
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>М.Төрбат</p>
+              <p>СЭЗИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__one"></div>
-          <div data-aos="fade-up" className="card card__three">
+          <div data-aos="fade-up" className="card card__three bg-primary">
             <div className="container card__img">
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Б.Номин-Эрдэнэ</p>
+              <p>ШУТИС</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" className="card card__four"></div>
+          <div data-aos="fade-up" className="card card__three ">
+            <div className="container card__img">
+              <img src={profile} alt="zurag" />
+            </div>
+            <div className="text-center">
+              <p>Э.Тэмүүжин</p>
+              <p>МУИС</p>
             </div>
           </div>
         </div>
@@ -81,8 +101,8 @@ export function Intern() {
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Б.Билгүүн</p>
+              <p>ШУТИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__one"></div>
@@ -91,8 +111,17 @@ export function Intern() {
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Н.Сүглэгмаа</p>
+              <p>МУИС</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" className="card card__three ">
+            <div className="container card__img">
+              <img src={profile} alt="zurag" />
+            </div>
+            <div className="text-center">
+              <p>Б.Сүхбат</p>
+              <p>МУИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__three bg-info">
@@ -100,19 +129,21 @@ export function Intern() {
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Н.Сүхтөмөр</p>
+              <p>ШУТИС</p>
             </div>
           </div>
+          <div data-aos="fade-up" className="card card__four"></div>
         </div>
+
         <div className="col-2 box--holder">
           <div data-aos="fade-up" className="card card__three bg-info">
             <div className="container card__img">
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Э.Амарболд</p>
+              <p>МУИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__three">
@@ -120,21 +151,32 @@ export function Intern() {
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Ц.Цэлмүүн</p>
+              <p>МУИС</p>
             </div>
           </div>
+          <div data-aos="fade-up" className="card card__one"></div>
+
           <div data-aos="fade-up" className="card card__four"></div>
           <div data-aos="fade-up" className="card card__two bg-primary">
             <div className="container card__img">
               <img src={profile} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Name</p>
-              <p>NUM</p>
+              <p>Д.Даваадорж</p>
+              <p>МУИС</p>
             </div>
           </div>
-          <div data-aos="fade-up" className="card card__one"></div>
+          <div data-aos="fade-up" className="card card__four"></div>
+          <div data-aos="fade-up" className="card card__three bg-warning">
+            <div className="container card__img">
+              <img src={profile} alt="zurag" />
+            </div>
+            <div className="text-center">
+              <p>----</p>
+              <p>----</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

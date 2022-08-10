@@ -16,7 +16,7 @@ export function Partners() {
     //scrollAnim();
   });
   return (
-    <div className="partners row">
+    <div className="partners row" id="partner">
       <div
         data-aos="fade-up"
         data-aos-duration="500"
