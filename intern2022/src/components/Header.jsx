@@ -64,52 +64,7 @@ export default class Header extends Component {
     // let partnerY = partner.getBoundingClientRect().y;
     let internY = intern.getBoundingClientRect().y;
     let contactY = contact.getBoundingClientRect().y;
-    // console.log("home => " + homeY);
-    // console.log("social => " + socialY);
-    // console.log("partner => " + partnerY);
-    // console.log("intern=> " + internY);
-    // console.log("contact => " + contactY);
-    //console.log(home.getBoundingClientRect().y)
-    //let intern = document.querySelector("#internAnchor");
-    //let contact = document.querySelector("#contactAnchor");
-    // let scroll = window.scrollY;
-    // if (homeY > 200) {
-    //   homeA.classList.remove("active");
-    //   // socialA.classList.remove("active");
-    //   // partnerA.classList.remove("active");
-    //   internA.classList.remove("active");
-    //   contactA.classList.remove("active");
-    // } else if (homeY <= 200 && socialY > 330) {
-    //   internA.classList.remove("active");
-    //   contactA.classList.remove("active");
-    //   // socialA.classList.remove("active");
-    //   // partnerA.classList.remove("active");
-    //   homeA.classList.add("active");
-    // } else if (socialY <= 330 && partnerY > 300) {
-    //   internA.classList.remove("active");
-    //   contactA.classList.remove("active");
-    //   // socialA.classList.add("active");
-    //   // partnerA.classList.remove("active");
-    //   homeA.classList.remove("active");
-    // } else if (partnerY <= 300 && internY > 300) {
-    //   internA.classList.remove("active");
-    //   contactA.classList.remove("active");
-    //   socialA.classList.remove("active");
-    //   partnerA.classList.add("active");
-    //   homeA.classList.remove("active");
-    // } else if (internY <= 300 && contactY > 300) {
-    //   contactA.classList.remove("active");
-    //   socialA.classList.remove("active");
-    //   partnerA.classList.remove("active");
-    //   homeA.classList.remove("active");
-    //   internA.classList.add("active");
-    // } else if (contactY <= 300) {
-    //   socialA.classList.remove("active");
-    //   partnerA.classList.remove("active");
-    //   homeA.classList.remove("active");
-    //   internA.classList.remove("active");
-    //   contactA.classList.add("active");
-    // }
+
     if (homeY > 200) {
       homeA.classList.remove("active");
       internA.classList.remove("active");

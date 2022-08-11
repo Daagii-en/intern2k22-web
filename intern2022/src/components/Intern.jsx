@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import davaajargal from "../logo/devImg1.jpg";
-import tsenguun from "../logo/devImg2.jpg";
+import davaajargal from "../logo/davaajargal.jpg";
+import tsenguun from "../logo/tsenguunbb.jpg";
+import suglegmaa from "../logo/suglegmaa.jpg";
+import turbat from "../logo/turbat.jpg";
+import amarbold from "../logo/amarbold.jpg";
+import temuulen from "../logo/temuulen.jpg";
+import bilguun from "../logo/bilguun.jpg";
 import profile from "../logo/profile.jpg";
 export function Intern() {
   useEffect(() => {
@@ -16,10 +21,10 @@ export function Intern() {
           <div data-aos="fade-up" className="  card card__one"></div>
           <div data-aos="fade-up" className="card card__two">
             <div className="container card__img">
-              <img src={davaajargal} alt="zurag" />
+              <img src={tsenguun} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>Ө.Даваажаргал</p>
+              <p>О.Цэнгүүн</p>
               <p>МУИС</p>
             </div>
           </div>
@@ -44,7 +49,7 @@ export function Intern() {
           </div>
           <div data-aos="fade-up" className="card card__three bg-info">
             <div className="container card__img">
-              <img src={profile} alt="zurag" />
+              <img src={temuulen} alt="zurag" />
             </div>
             <div className="text-center">
               <p>Б.Тэмүүлэн</p>
@@ -56,17 +61,17 @@ export function Intern() {
         <div className="col-2 box--holder">
           <div data-aos="fade-up" className="card card__two bg-success ">
             <div className="container card__img">
-              <img src={tsenguun} alt="zurag" />
+              <img src={davaajargal} alt="zurag" />
             </div>
             <div className="text-center">
-              <p>О.Цэнгүүн</p>
+              <p>Ө.Даваажаргал</p>
               <p>МУИС</p>
             </div>
           </div>
           <div data-aos="fade-up" className="card card__four"></div>
           <div data-aos="fade-up" className="card card__three bg-info">
             <div className="container card__img">
-              <img src={profile} alt="zurag" />
+              <img src={turbat} alt="zurag" />
             </div>
             <div className="text-center">
               <p>М.Төрбат</p>
@@ -98,7 +103,7 @@ export function Intern() {
           <div data-aos="fade-up" className="card card__four"></div>
           <div data-aos="fade-up" className="card card__two bg-warning">
             <div className="container card__img">
-              <img src={profile} alt="zurag" />
+              <img src={bilguun} alt="zurag" />
             </div>
             <div className="text-center">
               <p>Б.Билгүүн</p>
@@ -108,7 +113,7 @@ export function Intern() {
           <div data-aos="fade-up" className="card card__one"></div>
           <div data-aos="fade-up" className="card card__three bg-success">
             <div className="container card__img">
-              <img src={profile} alt="zurag" />
+              <img src={suglegmaa} alt="zurag" />
             </div>
             <div className="text-center">
               <p>Н.Сүглэгмаа</p>
@@ -139,7 +144,7 @@ export function Intern() {
         <div className="col-2 box--holder">
           <div data-aos="fade-up" className="card card__three bg-info">
             <div className="container card__img">
-              <img src={profile} alt="zurag" />
+              <img src={amarbold} alt="zurag" />
             </div>
             <div className="text-center">
               <p>Э.Амарболд</p>

@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export function Gallery2() {
+  useEffect(() => {
+    Aos.init({
+      offset: 50, // offset (in px) from the original trigger point
+      duration: 500, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom",
+    });
+  });
   return (
-    <div className="gallery3">
+    <div data-aos="fade-up" className="gallery3">
       <div className="gallery">
         <div className="gallery__column">
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@jeka_fe"
             target="_blank"
             className="gallery__link"
@@ -23,6 +36,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@oladimeg"
             target="_blank"
             className="gallery__link"
@@ -40,6 +54,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@a2eorigins"
             target="_blank"
             className="gallery__link"
@@ -59,6 +74,7 @@ export function Gallery2() {
 
         <div className="gallery__column">
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@noahbuscher"
             target="_blank"
             className="gallery__link"
@@ -76,6 +92,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@von_co"
             target="_blank"
             className="gallery__link"
@@ -93,6 +110,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@samburriss"
             target="_blank"
             className="gallery__link"
@@ -112,6 +130,7 @@ export function Gallery2() {
 
         <div className="gallery__column">
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@marilezhava"
             target="_blank"
             className="gallery__link"
@@ -129,6 +148,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@ethanhaddox"
             target="_blank"
             className="gallery__link"
@@ -146,6 +166,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@mr_geshani"
             target="_blank"
             className="gallery__link"
@@ -165,6 +186,7 @@ export function Gallery2() {
 
         <div className="gallery__column">
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@frxgui"
             target="_blank"
             className="gallery__link"
@@ -182,6 +204,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@majestical_jasmin"
             target="_blank"
             className="gallery__link"
@@ -199,6 +222,7 @@ export function Gallery2() {
           </a>
 
           <a
+            data-aos="fade-up"
             href="https://unsplash.com/@dimadallacqua"
             target="_blank"
             className="gallery__link"

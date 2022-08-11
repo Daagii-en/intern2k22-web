@@ -37,7 +37,7 @@ export function Social() {
             <a
               target="_blank"
               title="facebook"
-              href="https://www.facebook.com/tsenguun.otgonbaatar"
+              href="https://www.facebook.com/golomtbank/"
             >
               <span>
                 <svg
@@ -101,7 +101,7 @@ export function Social() {
             <a
               target="_blank"
               title="instagram"
-              href="https://www.instagram.com/tseku_o"
+              href="https://instagram.com/golomtbank?igshid=qwt0baob8tdn"
             >
               <span>
                 <svg

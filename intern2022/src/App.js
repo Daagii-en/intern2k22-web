@@ -1,6 +1,6 @@
 import "./App.scss";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import {Footer} from "./components/Footer";
 import { Face } from "./components/Face";
 import { Home } from "./components/Home";
 import { Event } from "./components/Event";
@@ -9,7 +9,6 @@ import { Label } from "./components/Label";
 import { Partners } from "./components/Partners";
 import { Social } from "./components/Social";
 import vd from "./logo/Pexels-Videos.mp4";
-import { Gallery } from "./components/Gallery";
 import { Gallery2 } from "./components/Gallery2";
 
 function App() {
