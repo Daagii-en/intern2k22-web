@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import zurag from "../logo/IMG_1988.jpeg";
+import zurag2 from "../logo/IMG_1977.jpeg";
+import zurag3 from "../logo/IMG_6913.jpg";
+import zurag4 from "../logo/IMG_6932.jpg";
 export function Gallery2() {
   useEffect(() => {
     Aos.init({
@@ -16,228 +19,59 @@ export function Gallery2() {
   return (
     <div data-aos="fade-up" className="gallery3">
       <div className="gallery">
-        <div className="gallery__column">
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@jeka_fe"
-            target="_blank"
-            className="gallery__link"
-          >
+        <div className="gallery__row">
+          <div data-aos="fade-up" className="gallery__link ">
             <figure className="gallery__thumb">
               <img
-                src="https://source.unsplash.com/_cvwXhGqG-o/300x300"
+                src={zurag}
                 alt="Portrait by Jessica Felicio"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
-                Portrait by Jessica Felicio
+                Судлаач Оюутан Хөтөлбөр 2022.08.19
               </figcaption>
             </figure>
-          </a>
+          </div>
 
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@oladimeg"
-            target="_blank"
-            className="gallery__link"
-          >
+          <div data-aos="fade-up" className="gallery__link zurag2">
             <figure className="gallery__thumb">
               <img
-                src="https://source.unsplash.com/AHBvAIVqk64/300x500"
-                alt="Portrait by Oladimeji Odunsi"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Oladimeji Odunsi
-              </figcaption>
-            </figure>
-          </a>
-
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@a2eorigins"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/VLPLo-GtrIE/300x300"
-                alt="Portrait by Alex Perez"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Alex Perez
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div className="gallery__column">
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@noahbuscher"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/AR7aumwKr2s/300x300"
+                src={zurag4}
                 alt="Portrait by Noah Buscher"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
-                Portrait by Noah Buscher
+                Спорт өдөрлөг 2022.08.18
               </figcaption>
             </figure>
-          </a>
-
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@von_co"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/dnL6ZIpht2s/300x300"
-                alt="Portrait by Ivana Cajina"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Ivana Cajina
-              </figcaption>
-            </figure>
-          </a>
-
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@samburriss"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/tV_1sC603zA/300x500"
-                alt="Portrait by Sam Burriss"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Sam Burriss
-              </figcaption>
-            </figure>
-          </a>
+          </div>
         </div>
 
-        <div className="gallery__column">
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@marilezhava"
-            target="_blank"
-            className="gallery__link"
-          >
+        <div className="gallery__row">
+          <div data-aos="fade-up" className="gallery__link">
             <figure className="gallery__thumb">
               <img
-                src="https://source.unsplash.com/Xm9-vA_bhm0/300x500"
-                alt="Portrait by Mari Lezhava"
+                src={zurag2}
+                alt="Portrait by Oladimeji Odunsi"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
-                Portrait by Mari Lezhava
+                Хустай нуруу явган аялал 2022.08.12
               </figcaption>
             </figure>
-          </a>
-
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@ethanhaddox"
-            target="_blank"
-            className="gallery__link"
-          >
+          </div>
+          <div data-aos="fade-up" className="gallery__link zurag2">
             <figure className="gallery__thumb">
               <img
-                src="https://source.unsplash.com/NTjSR3zYpsY/300x300"
-                alt="Portrait by Ethan Haddox"
+                src={zurag3}
+                alt="Portrait by Alex Perez"
                 className="gallery__image"
               />
               <figcaption className="gallery__caption">
-                Portrait by Ethan Haddox
+                Спорт өдөрлөг 2022.08.18
               </figcaption>
             </figure>
-          </a>
-
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@mr_geshani"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/2JH8d3ChNec/300x300"
-                alt="Portrait by Amir Geshani"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Amir Geshani
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-
-        <div className="gallery__column">
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@frxgui"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/FQhLLehm4dk/300x300"
-                alt="Portrait by Guilian Fremaux"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Guilian Fremaux
-              </figcaption>
-            </figure>
-          </a>
-
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@majestical_jasmin"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/OQd9zONSx7s/300x300"
-                alt="Portrait by Jasmin Chew"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Jasmin Chew
-              </figcaption>
-            </figure>
-          </a>
-
-          <a
-            data-aos="fade-up"
-            href="https://unsplash.com/@dimadallacqua"
-            target="_blank"
-            className="gallery__link"
-          >
-            <figure className="gallery__thumb">
-              <img
-                src="https://source.unsplash.com/XZkEhowjx8k/300x500"
-                alt="Portrait by Dima DallAcqua"
-                className="gallery__image"
-              />
-              <figcaption className="gallery__caption">
-                Portrait by Dima DallAcqua
-              </figcaption>
-            </figure>
-          </a>
+          </div>
         </div>
       </div>
     </div>

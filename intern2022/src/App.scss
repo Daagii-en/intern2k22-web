@@ -6,7 +6,6 @@ $bg-color: rgb(14, 26, 44);
 $bgcolor: rgb(0, 119, 255);
 $arrow: #3c376f;
 $bg: #fef8f9;
-
 * {
   margin: 0;
   padding: 0;
@@ -252,6 +251,12 @@ video {
         }
       }
     }
+    ul {
+      gap: 5px;
+    }
+    p {
+      margin-bottom: 0px;
+    }
   }
 }
 @media screen and (max-width:700px) {
@@ -455,6 +460,7 @@ video {
       &--label{
         width: 100%;
         font-weight: 500;
+        font-size: 16px;
       }
       &--holder{
         width: 80%;
@@ -609,7 +615,7 @@ video {
   &--content {
     h2 {
       color: rgb(253, 253, 255);
-      font-size: calc(1.5rem + 0.9vw);
+      font-size: calc(1.5rem + 0.5vw);
       font-weight: 900;
     }
     label {
@@ -756,6 +762,7 @@ video {
     margin-bottom: 0.5em;
   }
   &__content {
+    margin-top: 2em;
     margin-bottom: 3em;
     .menu {
       display: flex;
@@ -830,25 +837,33 @@ video {
     width: 80%;
     //display: inline;
     margin: 50px auto;
-    .menu{
-      svg{
-        width: 80%;
-        //height: width;
+    
+    &__content{
+      margin-top: 3em;
+      .menu{
+        svg{
+          width: 80%;
+          //height: width;
+        }
       }
     }
   }
   .partners{
     width: 80%;
     margin: 0% auto;
-    .menu{
-      img{
-
-      }
-      svg{
-        //width: 80%;
-        //height: width;
+    &__content{
+      margin-top: 3em;
+      .menu{
+        img{
+  
+        }
+        svg{
+          //width: 80%;
+          //height: width;
+        }
       }
     }
+    
   }
 }
 @media screen and (max-width:600px) {
@@ -916,6 +931,7 @@ video {
     margin-bottom: 0.5em;
   }
   &__content {
+    margin-top: 2em;
     margin-bottom: 3em;
     .menu {
       display: flex;
@@ -999,6 +1015,7 @@ video {
   flex-direction: column;
   align-items: center;
   min-height: fit-content;
+  //width: 80%;
   margin-top: 100px;
   h1 {
     color: #ffffff;
@@ -1007,17 +1024,21 @@ video {
     font-weight: 900;
   }
   &--content {
+    display: flex;
+    //justify-content: center;
     margin-top: 2em;
   }
+  // &--content::-webkit-scrollbar {
+  //   display: none;
+  // }
 }
 .box {
   &--holder {
-    border-radius: 10px;
-    margin: 0.5em;
-    min-width: 300px;
+    //border-radius: 10px;
+    margin: 0em;
+    min-width: 268px;
     height: fit-content;
     //position: relative;
-
   }
 }
 .card {
@@ -1027,13 +1048,15 @@ video {
   font-weight: 800;
   font-size: 20px;
   cursor: pointer;
+ 
   &__one {
     height: 100px;
-    background-color: rgb(224, 41, 99);
+    //  background-color: rgb(18, 38, 106);
+    background-color: $bg-color;
   }
   &__two {
     height: 300px;
-    background-color: rgb(55, 33, 224);
+    background-color: transparent;
     transition: transform ease-in 1s;
   }
   &__two:hover {
@@ -1041,7 +1064,7 @@ video {
   }
   &__three {
     height: 300px;
-    background-color: purple;
+    background-color: transparent;
     transition: transform 1s ease-in;
   }
   &__three:hover {
@@ -1052,12 +1075,18 @@ video {
     background-color: white;
   }
   &__img {
-    width: 70%;
-    height: 60%;
+    width: 100%;
+    height: 70%;
     margin-top: 1em;
     background-color: rgba(53, 50, 50, 0.5);
     border-radius: 5px;
     padding: 0%;
+    background-image: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background-origin: content-box;
+    padding: 3px;
+    border-radius: 10px;
+    animation: animatedborder 3s ease alternate infinite;
+    background-size: 400% 400%;
     img{
       width: 100%;
       //@at-root:middle;
@@ -1068,6 +1097,17 @@ video {
   }
   p{
     margin: 0.5em  auto;
+  }
+}
+@keyframes animatedborder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 @media screen and (max-width:1200px) {
@@ -1126,160 +1166,6 @@ video {
   }
 }
 
-.gallery {
-  //z-index: 1000;
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-  }
-
-  button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background-color: white;
-    padding: 20px 5px;
-    width: 50px;
-    color: $arrow;
-    font-size: 2rem;
-  }
-
-  button span {
-    position: relative;
-    display: inline-block;
-    transform: translateX(0);
-    transition: transform 0.3s ease;
-  }
-
-  .previous:hover span {
-    transform: translateX(-10px) scale(1.2);
-  }
-
-  .next:hover span {
-    transform: translateX(10px) scale(1.2);
-  }
-
-  .slider-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .slider-nav li {
-    display: flex;
-    flex: 2;
-    text-align: center;
-  }
-
-  img {
-    max-width: 100%;
-    display: none;
-    box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
-  }
-
-  img.active {
-    display: block;
-    animation: fadeImg 0.8s;
-  }
-
-  .slider-nav .arrow {
-    flex: 0 0 15%;
-  }
-
-  .slider-nav a {
-    flex-basis: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .slider-nav span {
-    display: block;
-    width: 100%;
-  }
-
-  @keyframes fadeImg {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-}
-
-.gallery2 {
-  //z-index: 1000;
-  display: block;
-  .slide-container {
-    display: flex;
-    flex-direction: column;
-      width: 70%;
-      margin: auto;
-    }
-  
-    h3 {
-      text-align: center;
-    }
-  
-    .each-slide>div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-size: cover;
-      height: 300px;
-    }
-  
-    .each-slide span {
-      padding: 20px;
-      font-size: 20px;
-      background: #efefef;
-      text-align: center;
-    }
-  
-    .each-fade {
-      display: flex;
-    }
-  
-    .each-fade .image-container {
-      width: 75%;
-      overflow: hidden;
-    }
-  
-    .each-fade .image-container img {
-      width: 100%;
-    }
-  
-    .each-fade h2 {
-      width: 25%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      background: #adceed;
-    }
-  
-    .indicator {
-      width: 30px;
-      color: blue;
-      text-align: center;
-      cursor: pointer;
-      border: 1px blue solid;
-    }
-  
-    .indicator.active {
-      background: #000;
-      color: #fff;
-    }
-}
-
 .gallery3 {
   width: 80%;
   margin: 0 auto;
@@ -1289,6 +1175,7 @@ video {
   overflow: hidden;
   .gallery {
       display: flex;
+      flex-direction: column;
       padding: 2px;
       transition: .3s;
   
@@ -1296,37 +1183,45 @@ video {
         filter: grayscale(1);
       }
   
-      &__column {
+      &__row {
         display: flex;
-        flex-direction: column;
-        width: 25%;
+        flex-direction: row;
+        width: 100%;
       }
       &__link {
         margin: 2px;
         overflow: hidden;
-  
+        cursor: pointer;
         &:hover {
           .gallery__image {
             filter: grayscale(0);
+            //transform: scale(2);
           }
           .gallery__caption {
             opacity: 1;
           }
         }
       }
+      .zurag2{
+        //width: 100%;
+        margin-top: 50px;
+        margin-left: 20px;
+      }
+      // &__link:nth-child(1){
+      // //   transform: scale(2);
+      //    border-radius: 10px !important;
+      // }
   
       &__thumb {
         position: relative;
+        
       }
   
       &__image {
         display: block;
         width: 100%;
         transition: .3s;
-  
-        // &:hover {
-        //   transform: scale(1.1);
-        // }
+        border-radius: 10px;
       }
   
       &__caption {
@@ -1343,4 +1238,27 @@ video {
         transition: .3s;
       }
     }
+}
+@media screen and (max-width:1200px) {
+  .gallery3 {
+    .gallery{
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+      margin: auto;
+      overflow-x: scroll;
+      &__row{
+        min-width: 200%;
+        margin-left: auto;
+        
+      }
+      &__link{
+        width: fit-content;
+        margin: 1em !important;
+        img{
+          //min-width: 100%;
+        }
+      }
+    }
+  }
 }
