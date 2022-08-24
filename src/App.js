@@ -14,7 +14,7 @@ import { Gallery2 } from "./components/Gallery2";
 function App() {
   return (
     <div className="App">
-      <video autoPlay loop muted>
+      <video autoPlay loop muted defer>
         <source src={vd} />
       </video>
       <Header />
