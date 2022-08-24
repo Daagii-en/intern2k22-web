@@ -391,7 +391,7 @@ video {
 }
 .face::before {
   content: "";
-  background: linear-gradient(to top, black, transparent);
+  background: linear-gradient(to top, $bg-color, transparent);
   bottom: 0;
   width: 100%;
   height: 20px;
