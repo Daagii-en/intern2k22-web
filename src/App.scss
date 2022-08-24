@@ -3,6 +3,7 @@
 @import './reset/normalize.scss';
 $bg-primary: linear-gradient(to right, #003c7f, #2750f5);
 $bg-color: rgb(23, 23, 24);
+$bg-color-secondary: rgb(32, 32, 33);
 $bgcolor: rgb(0, 119, 255);
 $arrow: #3c376f;
 $bg: #fef8f9;
@@ -1052,7 +1053,7 @@ video {
   &__one {
     height: 100px;
     //  background-color: rgb(18, 38, 106);
-    background-color: $bg-color;
+    background-color: $bg-color-secondary;
   }
   &__two {
     height: 300px;
